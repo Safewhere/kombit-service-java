@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<project name="BUILD-EXT" default="build-ext" basedir=".">
+    <import file="build.xml"/>
+ 
+    <property environment="env"/>
+    <property name="j2ee.server.home" value="${env.JAVA_HOME}" />
+	<property name="libs.CopyLibs.classpath" value="C:\\Program Files\\NetBeans 8.0.2\\java\\ant\\extra\\org-netbeans-modules-java-j2seproject-copylibstask.jar"/>
+   
+    
+   <target name="build-ext" depends="default">
+   </target>
+</project>

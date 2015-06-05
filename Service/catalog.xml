@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://sdev43.safewhere.local/runtime/services/trust/mex?wsdl=wsdl0" uri="src/conf/xml-resources/web-service-references/mex/wsdl/sdev43.safewhere.local/runtime/services/trust/mex.wsdl_wsdl0.wsdl"/>
+    <system systemId="http://sdev43.safewhere.local/runtime/services/trust/mex" uri="src/conf/xml-resources/web-service-references/mex/wsdl/sdev43.safewhere.local/runtime/services/trust/mex.wsdl"/>
+    <system systemId="http://sdev43.safewhere.local/runtime/services/trust/mex?xsd=xsd0" uri="src/conf/xml-resources/web-service-references/mex/wsdl/sdev43.safewhere.local/runtime/services/trust/mex.xsd_xsd0.xsd"/>
+    <system systemId="http://sdev43.safewhere.local/runtime/services/trust/mex?xsd=xsd1" uri="src/conf/xml-resources/web-service-references/mex/wsdl/sdev43.safewhere.local/runtime/services/trust/mex.xsd_xsd1.xsd"/>
+    <system systemId="https://sdev43.safewhere.local/runtime/services/trust/mex" uri="src/conf/xml-resources/web-service-references/mex/wsdl/sdev43.safewhere.local/runtime/services/trust/mex.wsdl"/>
+    <system systemId="https://sdev43.safewhere.local/runtime/services/trust/mex?xsd=xsd0" uri="src/conf/xml-resources/web-service-references/mex/wsdl/sdev43.safewhere.local/runtime/services/trust/mex.xsd_xsd0.xsd"/>
+    <system systemId="https://sdev43.safewhere.local/runtime/services/trust/mex?xsd=xsd1" uri="src/conf/xml-resources/web-service-references/mex/wsdl/sdev43.safewhere.local/runtime/services/trust/mex.xsd_xsd1.xsd"/>
+    <system systemId="https://log-in.test.miljoeportal.dk/runtime/services/trust/mex?wsdl" uri="src/conf/xml-resources/web-service-references/mex/wsdl/log-in.test.miljoeportal.dk/runtime/services/trust/mex.wsdl"/>
+    <system systemId="https://log-in.test.miljoeportal.dk/runtime/services/trust/mex?xsd=xsd0" uri="src/conf/xml-resources/web-service-references/mex/wsdl/log-in.test.miljoeportal.dk/runtime/services/trust/mex.xsd_xsd0.xsd"/>
+    <system systemId="https://log-in.test.miljoeportal.dk/runtime/services/trust/mex?xsd=xsd1" uri="src/conf/xml-resources/web-service-references/mex/wsdl/log-in.test.miljoeportal.dk/runtime/services/trust/mex.xsd_xsd1.xsd"/>   
+</catalog>

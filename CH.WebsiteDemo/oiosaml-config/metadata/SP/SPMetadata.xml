@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: SPMetadata.xml 2936 2008-05-26 08:06:46Z jre $ -->
+<md:EntityDescriptor entityID="http://192.168.2.101:8080/CH.WebsiteDemo" xmlns:brs="http://www.eogs.dk/2007/07/brs" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion">
+   <md:SPSSODescriptor AuthnRequestsSigned="true" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:Extensions>
+         <brs:Privilege>myPrivilege1A</brs:Privilege>
+         <brs:Privilege>myPrivilege1B</brs:Privilege>
+      </md:Extensions>
+      <md:KeyDescriptor use="signing">
+         <ds:KeyInfo>
+            <ds:X509Data>
+               <ds:X509Certificate>
+MIIDCTCCAfGgAwIBAgIQUVsdCkocHoVDJ6QI5LEMcDANBgkqhkiG9w0BAQsFADAn
+MRQwEgYKCZImiZPyLGQBGRYEdGVzdDEPMA0GA1UEAwwGS29tYml0MB4XDTE1MDIx
+NTE2MTcyM1oXDTMwMDIxNTE2MTcyM1owJzEUMBIGCgmSJomT8ixkARkWBHRlc3Qx
+DzANBgNVBAMMBktvbWJpdDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEB
+AL+zZ4ln2m3PpehsyLlRCWAv1OX5WtHmHN2493sFtohEqCY3GNuyRc3+sKawdSa9
+u53Q8L17tqbGWx23sbX0/IRB/k7BgRa4O6uyoCIhWDzenx6nPhagByvopO35mxkC
+1h5KBF+3ME9J8jBLXKcqOacvsBI1kqixkdhRCR/BldTS3SfHZHvbZi9KGjPJc/pO
+2l8L5V7wH1N7O/qz6ACGdXzzHuxcFR06LXmgNu99nNUieMnHz6Ta9Tm0j+kWsQsP
+Er1gBV06QrePB8wjXts7q3MZhKjkndUZ7nCEH1dNp+EqnXhLH11P9T0bYi3oactl
+vDqLvFUyBbIkChPgRQ/CWwUCAwEAAaMxMC8wHQYDVR0OBBYEFCS2r2VDmlYa0se2
+ojHX91Kxa/XaMA4GA1UdDwEB/wQEAwIFIDANBgkqhkiG9w0BAQsFAAOCAQEADpRL
+vnY3fU9vXS9O97E9u1MLJeikPMko7+2sA2dzQYeFp/f4iUAXELwsqkAps6kqi2DY
+J/HdDoCSzWqveYOMpSy4X8UoNWLoFlCVbes7wZNKH6znTgTDJmVKaKpOIHKgQ0cj
+VyV+HCosDS5QMxHHCNpqSDQi4HZ+/CUUxp1AVuU/cohS9i5S30HxyIDqlOFuVcFx
+PGmeA9vI/20jvRTfyEACbogTeH6NegNfXz7WwtbN/2plb8TDkUTi2dlfMqebDpO/
+39jBxc1WKWTxLrFZvQ3IC3rByq/0G9kH83lZxFVRgOgbu/+McUqp4PvkWxECrQsP
+hgDfHvLF6ax25C057w==
+               </ds:X509Certificate>
+            </ds:X509Data>
+         </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:KeyDescriptor use="encryption">
+         <ds:KeyInfo>  
+         <ds:X509Data>
+               <ds:X509Certificate>
+MIIDCTCCAfGgAwIBAgIQUVsdCkocHoVDJ6QI5LEMcDANBgkqhkiG9w0BAQsFADAn
+MRQwEgYKCZImiZPyLGQBGRYEdGVzdDEPMA0GA1UEAwwGS29tYml0MB4XDTE1MDIx
+NTE2MTcyM1oXDTMwMDIxNTE2MTcyM1owJzEUMBIGCgmSJomT8ixkARkWBHRlc3Qx
+DzANBgNVBAMMBktvbWJpdDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEB
+AL+zZ4ln2m3PpehsyLlRCWAv1OX5WtHmHN2493sFtohEqCY3GNuyRc3+sKawdSa9
+u53Q8L17tqbGWx23sbX0/IRB/k7BgRa4O6uyoCIhWDzenx6nPhagByvopO35mxkC
+1h5KBF+3ME9J8jBLXKcqOacvsBI1kqixkdhRCR/BldTS3SfHZHvbZi9KGjPJc/pO
+2l8L5V7wH1N7O/qz6ACGdXzzHuxcFR06LXmgNu99nNUieMnHz6Ta9Tm0j+kWsQsP
+Er1gBV06QrePB8wjXts7q3MZhKjkndUZ7nCEH1dNp+EqnXhLH11P9T0bYi3oactl
+vDqLvFUyBbIkChPgRQ/CWwUCAwEAAaMxMC8wHQYDVR0OBBYEFCS2r2VDmlYa0se2
+ojHX91Kxa/XaMA4GA1UdDwEB/wQEAwIFIDANBgkqhkiG9w0BAQsFAAOCAQEADpRL
+vnY3fU9vXS9O97E9u1MLJeikPMko7+2sA2dzQYeFp/f4iUAXELwsqkAps6kqi2DY
+J/HdDoCSzWqveYOMpSy4X8UoNWLoFlCVbes7wZNKH6znTgTDJmVKaKpOIHKgQ0cj
+VyV+HCosDS5QMxHHCNpqSDQi4HZ+/CUUxp1AVuU/cohS9i5S30HxyIDqlOFuVcFx
+PGmeA9vI/20jvRTfyEACbogTeH6NegNfXz7WwtbN/2plb8TDkUTi2dlfMqebDpO/
+39jBxc1WKWTxLrFZvQ3IC3rByq/0G9kH83lZxFVRgOgbu/+McUqp4PvkWxECrQsP
+hgDfHvLF6ax25C057w==
+               </ds:X509Certificate>
+            </ds:X509Data>          
+         </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="http://192.168.2.101:8080/CH.WebsiteDemo/saml/saml/LogoutServiceHTTPRedirect" ResponseLocation="http://192.168.2.101:8080/CH.WebsiteDemo/saml/LogoutServiceHTTPRedirectResponse"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="http://192.168.2.101:8080/CH.WebsiteDemo/saml/LogoutServiceSOAP"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://192.168.2.101:8080/CH.WebsiteDemo/saml/SAMLAssertionConsumer" index="0"/>
+   </md:SPSSODescriptor>
+   <md:Organization>
+      <md:OrganizationName xml:lang="en">Globe Team</md:OrganizationName>
+      <md:OrganizationURL xml:lang="en">http://www.testoiojava.dk</md:OrganizationURL>
+   </md:Organization>
+   <md:ContactPerson contactType="technical">
+      <md:Company>Globe Team A/S</md:Company>
+      <md:GivenName>Globe Team A/S</md:GivenName>
+      <md:SurName>Globe Team A/S</md:SurName>
+      <md:EmailAddress>vtt@globeteam.com</md:EmailAddress>
+      <md:TelephoneNumber>23736515</md:TelephoneNumber>
+   </md:ContactPerson>
+</md:EntityDescriptor>

@@ -1,0 +1,1 @@
+copy cacerts.jks and keystore.jks to c:\Program Files\glassfish-4.1\glassfish\domains\domain1\config\ folder which already includs kombit certificate for testing 
