@@ -16,7 +16,7 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.2
  * 
  */
-@WebServiceClient(name = "Service", targetNamespace = "http://kombit.provider.dk/", wsdlLocation = "http://localhost:8080/Service/Service?wsdl")
+@WebServiceClient(name = "Service", targetNamespace = "http://kombit.provider.dk/", wsdlLocation = "http://adgangsstyringeksempler.test-stoettesystemerne.dk:8080/Service/Service?wsdl")
 public class Service_Service
     extends javax.xml.ws.Service
 {
@@ -29,7 +29,7 @@ public class Service_Service
         URL url = null;
         WebServiceException e = null;
         try {
-            url = new URL("http://localhost:8080/Service/Service?wsdl");
+            url = new URL("http://adgangsstyringeksempler.test-stoettesystemerne.dk:8080/Service/Service?wsdl");
         } catch (MalformedURLException ex) {
             e = new WebServiceException(ex);
         }

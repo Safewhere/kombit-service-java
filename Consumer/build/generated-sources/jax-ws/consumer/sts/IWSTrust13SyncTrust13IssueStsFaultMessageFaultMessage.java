@@ -23,8 +23,8 @@ public class IWSTrust13SyncTrust13IssueStsFaultMessageFaultMessage
 
     /**
      * 
-     * @param faultInfo
      * @param message
+     * @param faultInfo
      */
     public IWSTrust13SyncTrust13IssueStsFaultMessageFaultMessage(String message, StsFaultMessage faultInfo) {
         super(message);
@@ -33,9 +33,9 @@ public class IWSTrust13SyncTrust13IssueStsFaultMessageFaultMessage
 
     /**
      * 
+     * @param message
      * @param faultInfo
      * @param cause
-     * @param message
      */
     public IWSTrust13SyncTrust13IssueStsFaultMessageFaultMessage(String message, StsFaultMessage faultInfo, Throwable cause) {
         super(message, cause);
