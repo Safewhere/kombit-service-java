@@ -80,7 +80,7 @@
                         <sp:RequireServerEntropy/>
                     </wsp:Policy>
                 </sp:Trust13>
-                <sc:KeyStore wspp:visibility="private" location="C:\Program Files\glassfish-4.1\glassfish\domains\domain1\config\keystore.jks" type="JKS" storepass="changeit" alias="{46bf4ba8-c898-45b1-b79f-0d7fb690adcf}"/>
+                <sc:KeyStore wspp:visibility="private" location="C:\Program Files\glassfish-4.1\glassfish\domains\domain1\config\keystore.jks" type="JKS" storepass="changeit" alias="kombitt"/>
             </wsp:All>
         </wsp:ExactlyOne>
     </wsp:Policy>

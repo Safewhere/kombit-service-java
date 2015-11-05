@@ -4,7 +4,6 @@
  xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" 
  xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
  xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="mainclientconfig" 
- >    
-    <import location="Service.xml" namespace="http://service.service/"/>
+ >
     <import location="mex.xml" namespace="http://schemas.microsoft.com/ws/2008/06/identity/securitytokenservice"/>
 </definitions>

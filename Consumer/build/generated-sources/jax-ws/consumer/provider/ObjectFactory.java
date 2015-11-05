@@ -24,15 +24,23 @@ import javax.xml.namespace.QName;
 @XmlRegistry
 public class ObjectFactory {
 
+    private final static QName _PingResponse_QNAME = new QName("http://kombit.provider.dk/", "pingResponse");
     private final static QName _Framework_QNAME = new QName("urn:liberty:sb:2006-08", "Framework");
     private final static QName _Ping_QNAME = new QName("http://kombit.provider.dk/", "ping");
-    private final static QName _PingResponse_QNAME = new QName("http://kombit.provider.dk/", "pingResponse");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: consumer.provider
      * 
      */
     public ObjectFactory() {
+    }
+
+    /**
+     * Create an instance of {@link Framework }
+     * 
+     */
+    public Framework createFramework() {
+        return new Framework();
     }
 
     /**
@@ -52,11 +60,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link Framework }
+     * Create an instance of {@link JAXBElement }{@code <}{@link PingResponse }{@code >}}
      * 
      */
-    public Framework createFramework() {
-        return new Framework();
+    @XmlElementDecl(namespace = "http://kombit.provider.dk/", name = "pingResponse")
+    public JAXBElement<PingResponse> createPingResponse(PingResponse value) {
+        return new JAXBElement<PingResponse>(_PingResponse_QNAME, PingResponse.class, null, value);
     }
 
     /**
@@ -75,15 +84,6 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "http://kombit.provider.dk/", name = "ping")
     public JAXBElement<Ping> createPing(Ping value) {
         return new JAXBElement<Ping>(_Ping_QNAME, Ping.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link PingResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://kombit.provider.dk/", name = "pingResponse")
-    public JAXBElement<PingResponse> createPingResponse(PingResponse value) {
-        return new JAXBElement<PingResponse>(_PingResponse_QNAME, PingResponse.class, null, value);
     }
 
 }

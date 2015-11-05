@@ -3,8 +3,8 @@
   <services/>
   <clients>
     <client name="mex">
-      <wsdl-url>https://adgangsstyringeksempler.test-stoettesystemerne.dk/sts/kombit/sts/mex?wsdl</wsdl-url>
-      <local-wsdl-file>adgangsstyringeksempler.test-stoettesystemerne.dk/sts/kombit/sts/mex.wsdl</local-wsdl-file>
+      <wsdl-url>https://adgangsstyring.projekt-stoettesystemerne.dk/identifysample/kombit/sts/mex?wsdl</wsdl-url>
+      <local-wsdl-file>adgangsstyring.projekt-stoettesystemerne.dk/identifysample/kombit/sts/mex.wsdl</local-wsdl-file>
       <package-name forceReplace="true">consumer.sts</package-name>
       <catalog-file>catalog.xml</catalog-file>
       <wsimport-options>
@@ -39,8 +39,8 @@
       </wsimport-options>
     </client>
     <client name="Service">
-      <wsdl-url>http://adgangsstyringeksempler.test-stoettesystemerne.dk:8080/Service/Service?wsdl</wsdl-url>
-      <local-wsdl-file>adgangsstyringeksempler.test-stoettesystemerne.dk_8080/Service/Service.wsdl</local-wsdl-file>
+      <wsdl-url>https://adgangsstyring.projekt-stoettesystemerne.dk:8181/Service/Service?wsdl</wsdl-url>
+      <local-wsdl-file>adgangsstyring.projekt-stoettesystemerne.dk_8181/Service/Service.wsdl</local-wsdl-file>
       <package-name forceReplace="true">consumer.provider</package-name>
       <catalog-file>catalog.xml</catalog-file>
       <wsimport-options>

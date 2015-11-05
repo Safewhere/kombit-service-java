@@ -3,8 +3,8 @@
     <wsp1:Policy wsu:Id="MutualCertificateWithMessageSecurityBinding_IWSTrust13SyncPolicy">
         <wsp1:ExactlyOne>
             <wsp1:All>
-                <sc:KeyStore wspp:visibility="private" alias="{46bf4ba8-c898-45b1-b79f-0d7fb690adcf}" storepass="changeit" type="JKS" location="C:\Program Files\glassfish-4.1\glassfish\domains\domain1\config\keystore.jks"/>
-                <sc:TrustStore wspp:visibility="private" peeralias="kombitnew" storepass="changeit" type="JKS" location="C:\Program Files\glassfish-4.1\glassfish\domains\domain1\config\cacerts.jks"/>
+                <sc:KeyStore wspp:visibility="private" alias="nets danid a/s - tu voces gyldig" storepass="changeit" type="JKS" location="C:\Program Files\glassfish-4.1\glassfish\domains\domain1\config\keystore.jks"/>
+                <sc:TrustStore wspp:visibility="private" peeralias="sslprojekt-stoettesystemerne.dk" storepass="changeit" type="JKS" location="C:\Program Files\glassfish-4.1\glassfish\domains\domain1\config\cacerts.jks"/>
             </wsp1:All>
         </wsp1:ExactlyOne>
     </wsp1:Policy>

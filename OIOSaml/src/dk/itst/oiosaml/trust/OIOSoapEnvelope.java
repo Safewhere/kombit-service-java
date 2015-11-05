@@ -425,14 +425,14 @@ public class OIOSoapEnvelope {
             return SAMLUtil.marshallObject(envelope);
         }
         CanonicalizationMethod canonicalizationMethod = xsf.newCanonicalizationMethod(CanonicalizationMethod.EXCLUSIVE, (C14NMethodParameterSpec) null);
-        SignatureMethod signatureMethod = xsf.newSignatureMethod(SignatureMethod.RSA_SHA1, null);
+        SignatureMethod signatureMethod = xsf.newSignatureMethod("http://www.w3.org/2001/04/xmldsig-more#rsa-sha256", null);
 
         KeyInfoFactory keyInfoFactory = xsf.getKeyInfoFactory();
         KeyInfo ki = generateKeyInfo(credential, keyInfoFactory, true);
 
         List<Reference> refs = new ArrayList<>();
 
-        DigestMethod digestMethod = xsf.newDigestMethod(DigestMethod.SHA1, null);
+        DigestMethod digestMethod = xsf.newDigestMethod(DigestMethod.SHA256, null);
         List<Transform> transforms = new ArrayList<>(2);
         transforms.add(xsf.newTransform("http://www.w3.org/2001/10/xml-exc-c14n#", new ExcC14NParameterSpec(Collections.singletonList("xsd"))));
 

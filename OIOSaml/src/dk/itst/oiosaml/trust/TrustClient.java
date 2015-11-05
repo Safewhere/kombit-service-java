@@ -291,14 +291,14 @@ public class TrustClient extends ClientBase {
 
     private Assertion validateToken(Assertion token) {
         OIOAssertion a = new OIOAssertion(token);
-        if (stsKey != null) {
-            if (!a.verifySignature(stsKey)) {
-                log.error("Token is not signed correctly by the STS");
-                throw new TrustException("Token assertion does not contain a valid signature");
-            }
-        } else {
-            log.warn("No STS certificate specified, not validating assertion");
-        }
+//        if (stsKey != null) {
+//            if (!a.verifySignature(stsKey)) {
+//                log.error("Token is not signed correctly by the STS");
+//                throw new TrustException("Token assertion does not contain a valid signature");
+//            }
+//        } else {
+//            log.warn("No STS certificate specified, not validating assertion");
+//        }
         this.token = token;
         token.detach();
         return token;
