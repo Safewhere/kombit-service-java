@@ -9,7 +9,7 @@ import consumer.client.ServiceConsumer;
 import consumer.provider.ObjectFactory;
 import consumer.provider.Ping;
 import consumer.provider.PingResponse;
-import consumer.sts.StsFaultMessage;
+import consumer.sts.StsFaultDetail;
 import dk.itst.oiosaml.common.SAMLUtil;
 import dk.itst.oiosaml.common.SOAPException;
 import dk.itst.oiosaml.trust.ResultHandler;
@@ -158,12 +158,12 @@ public class Util {
      * @param detail
      * @return 
      */
-    public static StsFaultMessage generateStsFaultMessage(XMLObject detail) {
-        StsFaultMessage ms = new StsFaultMessage();
+    public static StsFaultDetail generateStsFaultDetail(XMLObject detail) {
+        StsFaultDetail ms = new StsFaultDetail();
         Node childNode = detail.getDOM().getFirstChild();
         while (childNode != null) {
             if (childNode.getNodeType() == Node.ELEMENT_NODE) {
-                updateStsFaultMessage(ms, (Element) childNode);
+                updateStsFaultDetail(ms, (Element) childNode);
                 childNode = childNode.getNextSibling();
             }
         }
@@ -175,15 +175,10 @@ public class Util {
      * @param ms
      * @param node 
      */
-    private static void updateStsFaultMessage(StsFaultMessage ms, Element node) {
+    private static void updateStsFaultDetail(StsFaultDetail ms, Element node) {
         consumer.sts.ObjectFactory factory = new consumer.sts.ObjectFactory();
         if (null != node.getLocalName()) {
             switch (node.getLocalName()) {
-                case "EventId":
-                    String eventIdValue = node.getTextContent();
-                    JAXBElement<String> eventIdValueElement = factory.createString(eventIdValue);
-                    ms.setEventId(eventIdValueElement);
-                    break;
                 case "Message":
                     String messageValue = node.getTextContent();
                     JAXBElement<String> messageValueElement = factory.createString(messageValue);

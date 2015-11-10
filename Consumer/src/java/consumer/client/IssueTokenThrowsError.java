@@ -1,7 +1,7 @@
 package consumer.client;
 
 import consumer.sts.ObjectFactory;
-import consumer.sts.StsFaultMessage;
+import consumer.sts.StsFaultDetail;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -55,13 +55,17 @@ public class IssueTokenThrowsError extends HttpServlet {
         try {
             TrustClient client = Util.getTrustClient(Constant.ClientCertificateAlias);
             
-            client.addFaultHander("http://kombit.sample.dk/fault", "StsFaultMessage", new FaultHandler() {
+            client.addFaultHander("https://sts.kombit.dk/fault", "StsFaultDetail", new FaultHandler() {
                 @Override
-                public void handleFault(QName faultCode, String faultMessage, XMLObject detail) {
-                    StsFaultMessage detailObj = Util.generateStsFaultMessage(detail);
+                public void handleFault(QName faultCode, String faultReason, XMLObject detail) {
+                    StsFaultDetail detailObj = Util.generateStsFaultDetail(detail);
                     errorResponse += "Error thrown: "
-                            + "EventId = " + detailObj.getEventId().getValue()
-                            + ". Detail message = " + detailObj.getMessage().getValue()+ "<br /><br />";
+                            + "EventId = " + faultCode.toString()
+                            + ". Reason = " + faultReason+ "<br /><br />";
+                    if ((detailObj != null) && (detailObj.getMessage()!=null))
+                    {
+                        errorResponse += ". Detail = " + detailObj.getMessage().getValue();
+                    }
                 }
 
             });

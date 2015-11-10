@@ -38,10 +38,10 @@ public interface FaultHandler {
      * Invoked when a SOAP fault occurs.
      *
      * @param faultCode The FaultCode.
-     * @param faultMessage Fault Message.
+     * @param faultRason Fault Message.
      * @param detail The Fault detail element.
      * @throws Exception If any exception is thrown from a handler, the
      * exception is re-thrown as an {@link InvocationTargetException}.
      */
-    public void handleFault(QName faultCode, String faultMessage, XMLObject detail) throws Exception;
+    public void handleFault(QName faultCode, String faultRason, XMLObject detail) throws Exception;
 }

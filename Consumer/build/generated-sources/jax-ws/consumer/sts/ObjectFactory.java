@@ -52,9 +52,8 @@ public class ObjectFactory {
     private final static QName _Byte_QNAME = new QName("http://schemas.microsoft.com/2003/10/Serialization/", "byte");
     private final static QName _Double_QNAME = new QName("http://schemas.microsoft.com/2003/10/Serialization/", "double");
     private final static QName _QName_QNAME = new QName("http://schemas.microsoft.com/2003/10/Serialization/", "QName");
-    private final static QName _StsFaultMessage_QNAME = new QName("http://kombit.sample.dk/fault", "StsFaultMessage");
-    private final static QName _StsFaultMessageEventId_QNAME = new QName("http://kombit.sample.dk/fault", "EventId");
-    private final static QName _StsFaultMessageMessage_QNAME = new QName("http://kombit.sample.dk/fault", "Message");
+    private final static QName _StsFaultDetail_QNAME = new QName("https://sts.kombit.dk/fault", "StsFaultDetail");
+    private final static QName _StsFaultDetailMessage_QNAME = new QName("https://sts.kombit.dk/fault", "Message");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: consumer.sts
@@ -72,11 +71,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link StsFaultMessage }
+     * Create an instance of {@link StsFaultDetail }
      * 
      */
-    public StsFaultMessage createStsFaultMessage() {
-        return new StsFaultMessage();
+    public StsFaultDetail createStsFaultDetail() {
+        return new StsFaultDetail();
     }
 
     /**
@@ -320,30 +319,21 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link StsFaultMessage }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link StsFaultDetail }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://kombit.sample.dk/fault", name = "StsFaultMessage")
-    public JAXBElement<StsFaultMessage> createStsFaultMessage(StsFaultMessage value) {
-        return new JAXBElement<StsFaultMessage>(_StsFaultMessage_QNAME, StsFaultMessage.class, null, value);
+    @XmlElementDecl(namespace = "https://sts.kombit.dk/fault", name = "StsFaultDetail")
+    public JAXBElement<StsFaultDetail> createStsFaultDetail(StsFaultDetail value) {
+        return new JAXBElement<StsFaultDetail>(_StsFaultDetail_QNAME, StsFaultDetail.class, null, value);
     }
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://kombit.sample.dk/fault", name = "EventId", scope = StsFaultMessage.class)
-    public JAXBElement<String> createStsFaultMessageEventId(String value) {
-        return new JAXBElement<String>(_StsFaultMessageEventId_QNAME, String.class, StsFaultMessage.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://kombit.sample.dk/fault", name = "Message", scope = StsFaultMessage.class)
-    public JAXBElement<String> createStsFaultMessageMessage(String value) {
-        return new JAXBElement<String>(_StsFaultMessageMessage_QNAME, String.class, StsFaultMessage.class, value);
+    @XmlElementDecl(namespace = "https://sts.kombit.dk/fault", name = "Message", scope = StsFaultDetail.class)
+    public JAXBElement<String> createStsFaultDetailMessage(String value) {
+        return new JAXBElement<String>(_StsFaultDetailMessage_QNAME, String.class, StsFaultDetail.class, value);
     }
 
 }

@@ -17,7 +17,7 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.2
  * 
  */
-@WebServiceClient(name = "SecurityTokenService", targetNamespace = "http://schemas.microsoft.com/ws/2008/06/identity/securitytokenservice", wsdlLocation = "https://adgangsstyringeksempler.test-stoettesystemerne.dk/sts/kombit/sts/mex?wsdl")
+@WebServiceClient(name = "SecurityTokenService", targetNamespace = "http://schemas.microsoft.com/ws/2008/06/identity/securitytokenservice", wsdlLocation = "https://adgangsstyring.projekt-stoettesystemerne.dk/identifysample/kombit/sts/mex?wsdl")
 public class SecurityTokenService
     extends Service
 {
@@ -30,7 +30,7 @@ public class SecurityTokenService
         URL url = null;
         WebServiceException e = null;
         try {
-            url = new URL("https://adgangsstyringeksempler.test-stoettesystemerne.dk/sts/kombit/sts/mex?wsdl");
+            url = new URL("https://adgangsstyring.projekt-stoettesystemerne.dk/identifysample/kombit/sts/mex?wsdl");
         } catch (MalformedURLException ex) {
             e = new WebServiceException(ex);
         }
@@ -67,9 +67,9 @@ public class SecurityTokenService
      * @return
      *     returns IWSTrust13Sync
      */
-    @WebEndpoint(name = "MutualCertificateWithMessageSecurityBinding_IWSTrust13Sync")
-    public IWSTrust13Sync getMutualCertificateWithMessageSecurityBindingIWSTrust13Sync() {
-        return super.getPort(new QName("http://schemas.microsoft.com/ws/2008/06/identity/securitytokenservice", "MutualCertificateWithMessageSecurityBinding_IWSTrust13Sync"), IWSTrust13Sync.class);
+    @WebEndpoint(name = "LibertySimpleSoapBinding_IWSTrust13Sync")
+    public IWSTrust13Sync getLibertySimpleSoapBindingIWSTrust13Sync() {
+        return super.getPort(new QName("http://schemas.microsoft.com/ws/2008/06/identity/securitytokenservice", "LibertySimpleSoapBinding_IWSTrust13Sync"), IWSTrust13Sync.class);
     }
 
     /**
@@ -79,9 +79,9 @@ public class SecurityTokenService
      * @return
      *     returns IWSTrust13Sync
      */
-    @WebEndpoint(name = "MutualCertificateWithMessageSecurityBinding_IWSTrust13Sync")
-    public IWSTrust13Sync getMutualCertificateWithMessageSecurityBindingIWSTrust13Sync(WebServiceFeature... features) {
-        return super.getPort(new QName("http://schemas.microsoft.com/ws/2008/06/identity/securitytokenservice", "MutualCertificateWithMessageSecurityBinding_IWSTrust13Sync"), IWSTrust13Sync.class, features);
+    @WebEndpoint(name = "LibertySimpleSoapBinding_IWSTrust13Sync")
+    public IWSTrust13Sync getLibertySimpleSoapBindingIWSTrust13Sync(WebServiceFeature... features) {
+        return super.getPort(new QName("http://schemas.microsoft.com/ws/2008/06/identity/securitytokenservice", "LibertySimpleSoapBinding_IWSTrust13Sync"), IWSTrust13Sync.class, features);
     }
 
     private static URL __getWsdlLocation() {
