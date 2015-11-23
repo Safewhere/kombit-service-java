@@ -14,24 +14,22 @@ public class Constant {
  
     
     //production url
-    public static String StsEndpointAddress = "https://adgangsstyring.projekt-stoettesystemerne.dk/identifysample/kombit/sts/certificate"; 
-    public static String StsMexEndpointAddress = "https://adgangsstyring.projekt-stoettesystemerne.dk/identifysample/kombit/sts/mex?wsdl";
+//    public static String StsEndpointAddress = "https://adgangsstyring.projekt-stoettesystemerne.dk/identifysample/kombit/sts/certificate"; 
+//    public static String StsMexEndpointAddress = "https://adgangsstyring.projekt-stoettesystemerne.dk/identifysample/kombit/sts/mex?wsdl";
+//    public static String ServiceEndpointAddress = "https://adgangsstyring.projekt-stoettesystemerne.dk:8181/Service/Service";
+//    public static String AppliesToEndpointAddress = "https://adgangsstyring.projekt-stoettesystemerne.dk:8181/Service/Service";
+//    public static String Issuer = "https://adgangsstyring.projekt-stoettesystemerne.dk/identifysample";
+    
+    public static String StsEndpointAddress = "https://adgangsstyring.projekt-stoettesystemerne.dk/runtime/services/kombittrust/14/certificatemixed"; 
+    public static String StsMexEndpointAddress = "https://adgangsstyring.projekt-stoettesystemerne.dk/runtime/services/kombittrust/mex?wsdl";
     public static String ServiceEndpointAddress = "https://adgangsstyring.projekt-stoettesystemerne.dk:8181/Service/Service";
     public static String AppliesToEndpointAddress = "https://adgangsstyring.projekt-stoettesystemerne.dk:8181/Service/Service";
-    public static String Issuer = "https://adgangsstyring.projekt-stoettesystemerne.dk/identifysample";
+    public static String Issuer = "https://adgangsstyring.projekt-stoettesystemerne.dk/";
     
     //endregion
     
     //region Error values for AppliesTo 
-    public static String ErrorEndpointAddress = "http://kombit.samples.local/";
-    public static String CommonRuntimeError = ErrorEndpointAddress + 100;
-    public static String ConnectionResolutionError = ErrorEndpointAddress + 101;
-    public static String MalformedRequestError = ErrorEndpointAddress + 103;
-    public static String PathResolutionError = ErrorEndpointAddress + 104;
-    public static String AuditUserRequestError = ErrorEndpointAddress + 106;
-    public static String NotSupportedException = ErrorEndpointAddress + 110;
-    public static String ConfigurationError = ErrorEndpointAddress + 111;
-    public static String DatabaseError = ErrorEndpointAddress + 130;
+    public static String NoConnectionFoundError = "https://consumer.kombit.dk/noconnectionfound";
     //endregion
 
     //region values for namespace

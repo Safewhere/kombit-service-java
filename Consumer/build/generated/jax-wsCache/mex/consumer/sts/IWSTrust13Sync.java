@@ -28,14 +28,11 @@ public interface IWSTrust13Sync {
      * @param message
      * @return
      *     returns consumer.sts.RequestSecurityTokenResponseCollectionType
-     * @throws IWSTrust13SyncTrust13IssueStsFaultDetailFaultMessage
      */
     @WebMethod(operationName = "Trust13Issue", action = "http://docs.oasis-open.org/ws-sx/ws-trust/200512/RST/Issue")
     @WebResult(name = "RequestSecurityTokenResponseCollection", targetNamespace = "http://docs.oasis-open.org/ws-sx/ws-trust/200512", partName = "Trust13IssueResult")
     public RequestSecurityTokenResponseCollectionType trust13Issue(
         @WebParam(name = "RequestSecurityToken", targetNamespace = "http://docs.oasis-open.org/ws-sx/ws-trust/200512", partName = "message")
-        RequestSecurityTokenType message)
-        throws IWSTrust13SyncTrust13IssueStsFaultDetailFaultMessage
-    ;
+        RequestSecurityTokenType message);
 
 }

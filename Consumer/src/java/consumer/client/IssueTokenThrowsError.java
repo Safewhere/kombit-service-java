@@ -1,7 +1,7 @@
 package consumer.client;
 
 import consumer.sts.ObjectFactory;
-import consumer.sts.StsFaultDetail;
+//import consumer.sts.StsFaultDetail;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -58,33 +58,19 @@ public class IssueTokenThrowsError extends HttpServlet {
             client.addFaultHander("https://sts.kombit.dk/fault", "StsFaultDetail", new FaultHandler() {
                 @Override
                 public void handleFault(QName faultCode, String faultReason, XMLObject detail) {
-                    StsFaultDetail detailObj = Util.generateStsFaultDetail(detail);
+                    //StsFaultDetail detailObj = Util.generateStsFaultDetail(detail);
                     errorResponse += "Error thrown: "
                             + "EventId = " + faultCode.toString()
                             + ". Reason = " + faultReason+ "<br /><br />";
-                    if ((detailObj != null) && (detailObj.getMessage()!=null))
-                    {
-                        errorResponse += ". Detail = " + detailObj.getMessage().getValue();
-                    }
+//                    if ((detailObj != null) && (detailObj.getMessage()!=null))
+//                    {
+//                        errorResponse += ". Detail = " + detailObj.getMessage().getValue();
+//                    }
                 }
 
             });
             try {
-                client.setAppliesTo(Constant.CommonRuntimeError);
-                client.getToken(null);
-                client.setAppliesTo(Constant.ConnectionResolutionError);
-                client.getToken(null);
-                client.setAppliesTo(Constant.MalformedRequestError);
-                client.getToken(null);
-                client.setAppliesTo(Constant.PathResolutionError);
-                client.getToken(null);
-                client.setAppliesTo(Constant.AuditUserRequestError);
-                client.getToken(null);
-                client.setAppliesTo(Constant.NotSupportedException);
-                client.getToken(null);
-                client.setAppliesTo(Constant.ConfigurationError);
-                client.getToken(null);
-                client.setAppliesTo(Constant.DatabaseError);
+                client.setAppliesTo(Constant.NoConnectionFoundError);
                 client.getToken(null);
             } catch (TrustException e) {
                 errorResponse += "There is an uncaught exception thrown, please check server log for more details: " + e.getMessage() + "<br /><br />";

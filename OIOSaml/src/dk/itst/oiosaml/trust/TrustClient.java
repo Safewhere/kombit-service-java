@@ -223,7 +223,7 @@ public class TrustClient extends ClientBase {
             }
         } catch (SOAPException e) {
             Fault fault = e.getFault();
-            if (fault != null && fault.getDetail() != null) {
+            if (fault != null) {
                 Detail detail = fault.getDetail();
 
                 QName code = null;
@@ -236,10 +236,7 @@ public class TrustClient extends ClientBase {
                     message = fault.getMessage().getValue();
                 }
 
-                if (log.isDebugEnabled()) {
-                    log.debug("Finding fault handler for " + detail.getUnknownXMLObjects());
-                }
-                if (!detail.getUnknownXMLObjects().isEmpty()) {
+                if ((detail != null) && (!detail.getUnknownXMLObjects().isEmpty())) {
                     for (XMLObject el : detail.getUnknownXMLObjects()) {
                         FaultHandler handler = faultHandlers.get(el.getElementQName());
                         if (handler != null) {
@@ -291,14 +288,14 @@ public class TrustClient extends ClientBase {
 
     private Assertion validateToken(Assertion token) {
         OIOAssertion a = new OIOAssertion(token);
-//        if (stsKey != null) {
-//            if (!a.verifySignature(stsKey)) {
-//                log.error("Token is not signed correctly by the STS");
-//                throw new TrustException("Token assertion does not contain a valid signature");
-//            }
-//        } else {
-//            log.warn("No STS certificate specified, not validating assertion");
-//        }
+        if (stsKey != null) {
+            if (!a.verifySignature(stsKey)) {
+                log.error("Token is not signed correctly by the STS");
+                throw new TrustException("Token assertion does not contain a valid signature");
+            }
+        } else {
+            log.warn("No STS certificate specified, not validating assertion");
+        }
         this.token = token;
         token.detach();
         return token;
@@ -334,7 +331,8 @@ public class TrustClient extends ClientBase {
 
         if (issuer != null) {
             req.setIssuer(issuer);
-        } else if (claimsDialect != null || claims.size() > 0) {
+        }
+        if (claimsDialect != null || claims.size() > 0) {
             req.setClaims(claimsDialect, claims);
         }
         if (lifetimeExpire != null) {

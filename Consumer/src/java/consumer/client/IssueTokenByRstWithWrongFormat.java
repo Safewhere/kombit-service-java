@@ -1,6 +1,6 @@
 package consumer.client;
 
-import consumer.sts.StsFaultDetail;
+//import consumer.sts.StsFaultDetail;
 import consumer.util.Constant;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -81,14 +81,14 @@ public class IssueTokenByRstWithWrongFormat extends HttpServlet {
                 client.addFaultHander("https://sts.kombit.dk/fault", "StsFaultDetail", new FaultHandler() {
                     @Override
                     public void handleFault(QName faultCode, String faultReason, XMLObject detail) {
-                        StsFaultDetail detailObj = Util.generateStsFaultDetail(detail);
+                        //StsFaultDetail detailObj = Util.generateStsFaultDetail(detail);
                         errorResponse += "Error thrown: "
                             + "EventId = " + faultCode.toString()
                             + ". Reason = " + faultReason+ "<br /><br />";
-                        if ((detailObj != null) && (detailObj.getMessage()!=null))
-                        {
-                            errorResponse += ". Detail = " + detailObj.getMessage().getValue()+ "<br /><br />";
-                        }
+//                        if ((detailObj != null) && (detailObj.getMessage()!=null))
+//                        {
+//                            errorResponse += ". Detail = " + detailObj.getMessage().getValue()+ "<br /><br />";
+//                        }
                     }
 
                 });
