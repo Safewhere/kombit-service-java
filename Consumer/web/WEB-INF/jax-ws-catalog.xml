@@ -10,9 +10,7 @@
     <system systemId="https://adgangsstyring.projekt-stoettesystemerne.dk/runtime/services/kombittrust/mex?xsd=xsd2" uri="wsdl/adgangsstyring.projekt-stoettesystemerne.dk/runtime/services/kombittrust/mex.xsd_xsd2.xsd"/>
     <system systemId="https://adgangsstyring.projekt-stoettesystemerne.dk/runtime/services/kombittrust/mex?xsd=xsd1" uri="wsdl/adgangsstyring.projekt-stoettesystemerne.dk/runtime/services/kombittrust/mex.xsd_xsd1.xsd"/>
     <system systemId="https://adgangsstyring.projekt-stoettesystemerne.dk/runtime/services/kombittrust/mex?xsd=xsd3" uri="wsdl/adgangsstyring.projekt-stoettesystemerne.dk/runtime/services/kombittrust/mex.xsd_xsd3.xsd"/>
-    <system systemId="https://adgangsstyring.projekt-stoettesystemerne.dk/identifysample/kombit/sts/mex?wsdl" uri="wsdl/adgangsstyring.projekt-stoettesystemerne.dk/identifysample/kombit/sts/mex.wsdl"/>
-    <system systemId="https://adgangsstyring.projekt-stoettesystemerne.dk/identifysample/kombit/sts/mex?xsd=xsd0" uri="wsdl/adgangsstyring.projekt-stoettesystemerne.dk/identifysample/kombit/sts/mex.xsd_xsd0.xsd"/>
-    <system systemId="https://adgangsstyring.projekt-stoettesystemerne.dk/identifysample/kombit/sts/mex?xsd=xsd2" uri="wsdl/adgangsstyring.projekt-stoettesystemerne.dk/identifysample/kombit/sts/mex.xsd_xsd2.xsd"/>
-    <system systemId="https://adgangsstyring.projekt-stoettesystemerne.dk/identifysample/kombit/sts/mex?xsd=xsd1" uri="wsdl/adgangsstyring.projekt-stoettesystemerne.dk/identifysample/kombit/sts/mex.xsd_xsd1.xsd"/>
-    <system systemId="https://adgangsstyring.projekt-stoettesystemerne.dk/identifysample/kombit/sts/mex?xsd=xsd3" uri="wsdl/adgangsstyring.projekt-stoettesystemerne.dk/identifysample/kombit/sts/mex.xsd_xsd3.xsd"/>
+    <system systemId="https://adgangsstyring.projekt-stoettesystemerne.dk/sts/kombit/sts/mex?wsdl" uri="wsdl/adgangsstyring.projekt-stoettesystemerne.dk/sts/kombit/sts/mex.wsdl"/>
+    <system systemId="https://adgangsstyring.projekt-stoettesystemerne.dk/sts/kombit/sts/mex?xsd=xsd0" uri="wsdl/adgangsstyring.projekt-stoettesystemerne.dk/sts/kombit/sts/mex.xsd_xsd0.xsd"/>
+    <system systemId="https://adgangsstyring.projekt-stoettesystemerne.dk/sts/kombit/sts/mex?xsd=xsd1" uri="wsdl/adgangsstyring.projekt-stoettesystemerne.dk/sts/kombit/sts/mex.xsd_xsd1.xsd"/>
 </catalog>

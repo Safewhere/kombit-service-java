@@ -14,17 +14,17 @@ public class Constant {
  
     
     //production url
-//    public static String StsEndpointAddress = "https://adgangsstyring.projekt-stoettesystemerne.dk/identifysample/kombit/sts/certificate"; 
-//    public static String StsMexEndpointAddress = "https://adgangsstyring.projekt-stoettesystemerne.dk/identifysample/kombit/sts/mex?wsdl";
-//    public static String ServiceEndpointAddress = "https://adgangsstyring.projekt-stoettesystemerne.dk:8181/Service/Service";
-//    public static String AppliesToEndpointAddress = "https://adgangsstyring.projekt-stoettesystemerne.dk:8181/Service/Service";
-//    public static String Issuer = "https://adgangsstyring.projekt-stoettesystemerne.dk/identifysample";
-    
-    public static String StsEndpointAddress = "https://adgangsstyring.projekt-stoettesystemerne.dk/runtime/services/kombittrust/14/certificatemixed"; 
-    public static String StsMexEndpointAddress = "https://adgangsstyring.projekt-stoettesystemerne.dk/runtime/services/kombittrust/mex?wsdl";
+    public static String StsEndpointAddress = "https://adgangsstyring.projekt-stoettesystemerne.dk/sts/kombit/sts/certificate"; 
+    public static String StsMexEndpointAddress = "https://adgangsstyring.projekt-stoettesystemerne.dk/sts/kombit/sts/mex?wsdl";
     public static String ServiceEndpointAddress = "https://adgangsstyring.projekt-stoettesystemerne.dk:8181/Service/Service";
     public static String AppliesToEndpointAddress = "https://adgangsstyring.projekt-stoettesystemerne.dk:8181/Service/Service";
-    public static String Issuer = "https://adgangsstyring.projekt-stoettesystemerne.dk/";
+    public static String Issuer = "https://adgangsstyring.projekt-stoettesystemerne.dk/sts";
+    
+//    public static String StsEndpointAddress = "https://adgangsstyring.projekt-stoettesystemerne.dk/runtime/services/kombittrust/14/certificatemixed"; 
+//    public static String StsMexEndpointAddress = "https://adgangsstyring.projekt-stoettesystemerne.dk/runtime/services/kombittrust/mex?wsdl";
+//    public static String ServiceEndpointAddress = "https://adgangsstyring.projekt-stoettesystemerne.dk:8181/Service/Service";
+//    public static String AppliesToEndpointAddress = "https://adgangsstyring.projekt-stoettesystemerne.dk:8181/Service/Service";
+//    public static String Issuer = "https://adgangsstyring.projekt-stoettesystemerne.dk/";
     
     //endregion
     
