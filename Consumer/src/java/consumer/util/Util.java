@@ -26,14 +26,10 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.xml.bind.DatatypeConverter;
 import javax.xml.bind.JAXBContext;
-import javax.xml.bind.JAXBElement;
 import javax.xml.bind.JAXBException;
 import javax.xml.namespace.QName;
 import org.opensaml.ws.soap.util.SOAPConstants;
 import org.opensaml.ws.wssecurity.BinarySecurityToken;
-import org.opensaml.xml.XMLObject;
-import org.w3c.dom.Element;
-import org.w3c.dom.Node;
 
 /**
  *
@@ -47,9 +43,9 @@ public class Util {
      * which helps to see clear request and response message in server.log file 
      */
     public static void configMessageLogFile() {
-        com.sun.xml.ws.transport.http.client.HttpTransportPipe.dump = true;
-        com.sun.xml.ws.transport.http.HttpAdapter.dump = true;
-        com.sun.xml.ws.transport.http.HttpAdapter.dump_threshold = 16000;
+//        com.sun.xml.ws.transport.http.client.HttpTransportPipe.dump = true;
+//        com.sun.xml.ws.transport.http.HttpAdapter.dump = true;
+//        com.sun.xml.ws.transport.http.HttpAdapter.dump_threshold = 16000;
     }
     
     /**

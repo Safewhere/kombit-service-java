@@ -39,8 +39,8 @@
       </wsimport-options>
     </client>
     <client name="mex">
-      <wsdl-url>https://adgangsstyring.projekt-stoettesystemerne.dk/sts/kombit/sts/mex?wsdl</wsdl-url>
-      <local-wsdl-file>adgangsstyring.projekt-stoettesystemerne.dk/sts/kombit/sts/mex.wsdl</local-wsdl-file>
+      <wsdl-url>https://adgangsstyring.projekt-stoettesystemerne.dk/runtime/services/kombittrust/mex?wsdl</wsdl-url>
+      <local-wsdl-file>adgangsstyring.projekt-stoettesystemerne.dk/runtime/services/kombittrust/mex.wsdl</local-wsdl-file>
       <package-name forceReplace="true">consumer.sts</package-name>
       <catalog-file>catalog.xml</catalog-file>
       <wsimport-options>
