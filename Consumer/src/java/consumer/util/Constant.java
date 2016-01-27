@@ -55,8 +55,8 @@ public class Constant {
     
     public static String KeyStorePath = "C:\\Program Files\\glassfish-4.1\\glassfish\\domains\\domain1\\config\\keystore.jks";
     public static String KeyStorePassword = "changeit";
-    public static String ClientCertificateAlias = "nets danid a/s - tu voces gyldig";// cert with thumprint 46 78 23 72 45 fe dc 80 59 d1 13 67 59 55 df b8 70 d3 6b f4
-    public static String OboCertificateAlias = "tu generel foces gyldig (funktionscertifikat)";// cert with thumprint ‎15 3e 97 1c 6b ae cc 4e 4e c6 8d 82 69 30 39 01 65 4a 02 a6
+    public static String OboCertificateAlias = "nets danid a/s - tu voces gyldig";// cert with thumprint 46 78 23 72 45 fe dc 80 59 d1 13 67 59 55 df b8 70 d3 6b f4
+    public static String ClientCertificateAlias = "tu generel foces gyldig (funktionscertifikat)";// cert with thumprint ‎15 3e 97 1c 6b ae cc 4e 4e c6 8d 82 69 30 39 01 65 4a 02 a6
     //public static String OboCertificateAlias = "kombit støttesystemer (funktionscertifikat)";// CA95B2F383BEF8144500CD74B88BC42CD3DE936C
 
     //endregion
