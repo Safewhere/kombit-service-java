@@ -2,6 +2,15 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/C:/Data/Github/kombit-service-java/Consumer/src/java/consumer/util/Constant.java</file>
+            <file>file:/C:/Data/Github/kombit-service-java/Consumer/src/java/consumer/client/ServiceConsumerWithNormalOBO.java</file>
+            <file>file:/C:/Data/Github/kombit-service-java/Consumer/src/java/consumer/util/Util.java</file>
+            <file>file:/C:/Data/Github/kombit-service-java/Consumer/src/java/consumer/client/IssueToken.java</file>
+            <file>file:/C:/Data/Github/kombit-service-java/Consumer/src/java/consumer/client/IssueTokenByRstWithWrongFormat.java</file>
+            <file>file:/C:/Data/Github/kombit-service-java/Consumer/src/java/consumer/client/IssueTokenThrowsError.java</file>
+            <file>file:/C:/Data/Github/kombit-service-java/Consumer/src/java/consumer/client/ServiceConsumer.java</file>
+            <file>file:/C:/Data/Github/kombit-service-java/Consumer/src/java/consumer/client/ServiceConsumerWithProxyOBO.java</file>
+        </group>
     </open-files>
 </project-private>

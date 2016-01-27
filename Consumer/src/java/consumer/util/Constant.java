@@ -11,15 +11,15 @@ public class Constant {
     public static String LogFilePath = "C:/temp/";
     //region Endpoint
     // change it when debug at local or deploy in server   
- 
-    
-    //production url
-//    public static String StsEndpointAddress = "https://adgangsstyring.projekt-stoettesystemerne.dk/sts/kombit/sts/certificate"; 
+     
+//    Development url
+//    public static String StsEndpointAddress = "https://adgangsstyring.projekt-stoettesystemerne.dk/sts/kombit/sts/certificat"; 
 //    public static String StsMexEndpointAddress = "https://adgangsstyring.projekt-stoettesystemerne.dk/sts/kombit/sts/mex?wsdl";
-//    public static String ServiceEndpointAddress = "https://adgangsstyring.projekt-stoettesystemerne.dk:8181/Service/Service";
-//    public static String AppliesToEndpointAddress = "https://adgangsstyring.projekt-stoettesystemerne.dk:8181/Service/Service";
-//    public static String Issuer = "https://adgangsstyring.projekt-stoettesystemerne.dk/sts";
+//    public static String ServiceEndpointAddress = "https://service.projekt-stoettesystemerne.dk:8181/Service/Service";
+//    public static String AppliesToEndpointAddress = "https://service.projekt-stoettesystemerne.dk:8181/Service/Service";
+//    public static String Issuer = "https://adgangsstyring.projekt-stoettesystemerne.dk/";
     
+//  Production url
     public static String StsEndpointAddress = "https://adgangsstyring.projekt-stoettesystemerne.dk/runtime/services/kombittrust/14/certificatemixed"; 
     public static String StsMexEndpointAddress = "https://adgangsstyring.projekt-stoettesystemerne.dk/runtime/services/kombittrust/mex?wsdl";
     public static String ServiceEndpointAddress = "https://adgangsstyring.projekt-stoettesystemerne.dk:8181/Service/Service";
