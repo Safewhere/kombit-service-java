@@ -93,16 +93,16 @@
 </wsp:Policy>
 <types>
 <xsd:schema>
-<xsd:import namespace="urn:liberty:sb:profile" schemaLocation="https://adgangsstyring.projekt-stoettesystemerne.dk:8181/Service/Service?xsd=1"/>
+<xsd:import namespace="urn:liberty:sb:profile" schemaLocation="https://adgangsstyring.eksterntest-stoettesystemerne.dk:8181/Service/Service?xsd=1"/>
 </xsd:schema>
 <xsd:schema>
-<xsd:import namespace="urn:liberty:sb:2006-08" schemaLocation="https://adgangsstyring.projekt-stoettesystemerne.dk:8181/Service/Service?xsd=2"/>
+<xsd:import namespace="urn:liberty:sb:2006-08" schemaLocation="https://adgangsstyring.eksterntest-stoettesystemerne.dk:8181/Service/Service?xsd=2"/>
 </xsd:schema>
 <xsd:schema>
-<xsd:import namespace="http://schemas.xmlsoap.org/soap/envelope/" schemaLocation="https://adgangsstyring.projekt-stoettesystemerne.dk:8181/Service/Service?xsd=3"/>
+<xsd:import namespace="http://schemas.xmlsoap.org/soap/envelope/" schemaLocation="https://adgangsstyring.eksterntest-stoettesystemerne.dk:8181/Service/Service?xsd=3"/>
 </xsd:schema>
 <xsd:schema>
-<xsd:import namespace="http://kombit.provider.dk/" schemaLocation="https://adgangsstyring.projekt-stoettesystemerne.dk:8181/Service/Service?xsd=4"/>
+<xsd:import namespace="http://kombit.provider.dk/" schemaLocation="https://adgangsstyring.eksterntest-stoettesystemerne.dk:8181/Service/Service?xsd=4"/>
 </xsd:schema>
 </types>
 <message name="ping">
@@ -138,7 +138,7 @@
 </binding>
 <service name="Service">
 <port name="ServicePort" binding="tns:ServicePortBinding">
-<soap12:address location="https://adgangsstyring.projekt-stoettesystemerne.dk:8181/Service/Service"/>
+<soap12:address location="https://adgangsstyring.eksterntest-stoettesystemerne.dk:8181/Service/Service"/>
 </port>
 </service>
 </definitions>

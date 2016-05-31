@@ -26,8 +26,8 @@ public interface Service {
 
     /**
      * 
-     * @param framework
      * @param parameters
+     * @param framework
      * @return
      *     returns consumer.provider.PingResponse
      */

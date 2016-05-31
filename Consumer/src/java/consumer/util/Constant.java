@@ -13,22 +13,22 @@ public class Constant {
     // change it when debug at local or deploy in server   
  
     //The certificate endpoint address of Identify*STS
-    public static String StsEndpointAddress = "https://adgangsstyring.projekt-stoettesystemerne.dk/runtime/services/kombittrust/14/certificatemixed"; 
+    public static String StsEndpointAddress = "https://adgangsstyring.eksterntest-stoettesystemerne.dk/runtime/services/kombittrust/14/certificatemixed"; 
     //The metadata endpoint of Identify*STS
-    public static String StsMexEndpointAddress = "https://adgangsstyring.projekt-stoettesystemerne.dk/runtime/services/kombittrust/mex?wsdl";
+    public static String StsMexEndpointAddress = "https://adgangsstyring.eksterntest-stoettesystemerne.dk/runtime/services/kombittrust/mex?wsdl";
     //The issuer name of issued security token
-    public static String Issuer = "https://adgangsstyring.projekt-stoettesystemerne.dk/";
+    public static String Issuer = "https://adgangsstyring.eksterntest-stoettesystemerne.dk/";
     
     //The certificate endpoint of STS test stub
-//  public static String StsEndpointAddress = "https://adgangsstyring.projekt-stoettesystemerne.dk/sts/kombit/sts/certificate"; 
-//  public static String StsMexEndpointAddress = "https://adgangsstyring.projekt-stoettesystemerne.dk/sts/kombit/sts/mex?wsdl";
-//  public static String Issuer = "https://adgangsstyring.projekt-stoettesystemerne.dk/sts";
+//  public static String StsEndpointAddress = "https://adgangsstyring.eksterntest-stoettesystemerne.dk/sts/kombit/sts/certificate"; 
+//  public static String StsMexEndpointAddress = "https://adgangsstyring.eksterntest-stoettesystemerne.dk/sts/kombit/sts/mex?wsdl";
+//  public static String Issuer = "https://adgangsstyring.eksterntest-stoettesystemerne.dk/sts";
     
     //The url of production service which is secured by Identify*STS
-//  public static String ServiceEndpointAddress = "https://adgangsstyring.projekt-stoettesystemerne.dk:8181/Service/Service";
+    public static String ServiceEndpointAddress = "https://adgangsstyring.eksterntest-stoettesystemerne.dk:8181/Service/Service";
     
      //The url of another service which would be secured by Identify*STS
-    public static String ServiceEndpointAddress = "https://service.projekt-stoettesystemerne.dk:8181/Service/Service";
+//    public static String ServiceEndpointAddress = "https://service.eksterntest-stoettesystemerne.dk:8181/Service/Service";
  
     //Avender context value
     public static String ClaimValue = "01234567";
@@ -38,7 +38,8 @@ public class Constant {
     public static String TrustStorePath = "c:\\Program Files\\glassfish-4.1\\glassfish\\domains\\domain1\\config\\cacerts.jks";
     public static String TrustStorePassword = "changeit";    
     //The public certificate of Identify*STS
-    public static String StsCertificateAlias = "kombitt";// 01 69 9b 6c 50 39 6a c0 60 c8 ae 9b c3 d4 b3 43 c9 b5 7e b1
+    //public static String StsCertificateAlias = "kombitt";// 01 69 9b 6c 50 39 6a c0 60 c8 ae 9b c3 d4 b3 43 c9 b5 7e b1
+    public static String StsCertificateAlias = "kombitexternal";// ‎3a 10 3c f6 0a 9d 97 7b a5 a4 99 3e 06 d8 c9 ba 36 f2 58 3e
     
     public static String KeyStorePath = "C:\\Program Files\\glassfish-4.1\\glassfish\\domains\\domain1\\config\\keystore.jks";
     public static String KeyStorePassword = "changeit";

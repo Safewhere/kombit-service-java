@@ -3,9 +3,9 @@
   <services/>
   <clients>
     <client name="Service">
-      <wsdl-url>https://adgangsstyring.projekt-stoettesystemerne.dk:8181/Service/Service?wsdl</wsdl-url>
-      <local-wsdl-file>adgangsstyring.projekt-stoettesystemerne.dk_8181/Service/Service.wsdl</local-wsdl-file>
-      <package-name forceReplace="true">consumer.provider</package-name>
+      <wsdl-url>https://adgangsstyring.eksterntest-stoettesystemerne.dk:8181/Service/Service?wsdl</wsdl-url>
+      <local-wsdl-file>adgangsstyring.eksterntest-stoettesystemerne.dk_8181/Service/Service.wsdl</local-wsdl-file>
+      <package-name forceReplace="true">provider</package-name>
       <catalog-file>catalog.xml</catalog-file>
       <wsimport-options>
         <wsimport-option>
@@ -22,7 +22,7 @@
         </wsimport-option>
         <wsimport-option>
           <wsimport-option-name>wsdlLocation</wsimport-option-name>
-          <wsimport-option-value>http://adgangsstyringeksempler.test-stoettesystemerne.dk:8080/Service/Service?wsdl</wsimport-option-value>
+          <wsimport-option-value>https://adgangsstyring.eksterntest-stoettesystemerne.dk:8181/Service/Service?wsdl</wsimport-option-value>
         </wsimport-option>
         <wsimport-option>
           <wsimport-option-name>xnocompile</wsimport-option-name>
@@ -34,13 +34,13 @@
         </wsimport-option>
         <wsimport-option>
           <wsimport-option-name>package</wsimport-option-name>
-          <wsimport-option-value>consumer.provider</wsimport-option-value>
+          <wsimport-option-value>provider</wsimport-option-value>
         </wsimport-option>
       </wsimport-options>
     </client>
     <client name="mex">
-      <wsdl-url>https://adgangsstyring.projekt-stoettesystemerne.dk/runtime/services/kombittrust/mex?wsdl</wsdl-url>
-      <local-wsdl-file>adgangsstyring.projekt-stoettesystemerne.dk/runtime/services/kombittrust/mex.wsdl</local-wsdl-file>
+      <wsdl-url>https://adgangsstyring.eksterntest-stoettesystemerne.dk/runtime/services/kombittrust/mex?wsdl</wsdl-url>
+      <local-wsdl-file>adgangsstyring.eksterntest-stoettesystemerne.dk/runtime/services/kombittrust/mex.wsdl</local-wsdl-file>
       <package-name forceReplace="true">consumer.sts</package-name>
       <catalog-file>catalog.xml</catalog-file>
       <wsimport-options>
@@ -58,7 +58,7 @@
         </wsimport-option>
         <wsimport-option>
           <wsimport-option-name>wsdlLocation</wsimport-option-name>
-          <wsimport-option-value>https://adgangsstyring.projekt-stoettesystemerne.dk/identifysample/kombit/sts/mex?wsdl</wsimport-option-value>
+          <wsimport-option-value>https://adgangsstyring.eksterntest-stoettesystemerne.dk/runtime/services/kombittrust/mex?wsdl</wsimport-option-value>
         </wsimport-option>
         <wsimport-option>
           <wsimport-option-name>xnocompile</wsimport-option-name>
