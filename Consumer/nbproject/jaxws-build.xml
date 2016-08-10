@@ -28,7 +28,7 @@
     </target>
     <target name="wsimport-client-Service" depends="wsimport-init">
         <mkdir dir="${build.generated.dir}/jax-wsCache/Service"/>
-        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/Service" destdir="${build.generated.dir}/jax-wsCache/Service" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/Service/wsdl/adgangsstyring.eksterntest-stoettesystemerne.dk_8181/Service/Service.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://adgangsstyringeksempler.test-stoettesystemerne.dk:8080/Service/Service?wsdl" xnocompile="true" xendorsed="true" package="consumer.provider">
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/Service" destdir="${build.generated.dir}/jax-wsCache/Service" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/Service/wsdl/adgangsstyring.eksterntest-stoettesystemerne.dk_8181/Service/Service.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="https://service.eksterntest-stoettesystemerne.dk:8181/Service/Service?wsdl" xnocompile="true" xendorsed="true" package="consumer.provider">
             <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/Service/wsdl/adgangsstyring.eksterntest-stoettesystemerne.dk_8181/Service/Service.wsdl"/>
             <produces dir="${build.generated.dir}/jax-wsCache/Service"/>
         </wsimport>
@@ -39,12 +39,12 @@
         </copy>
     </target>
     <target name="wsimport-client-clean-Service" depends="-init-project">
-        <delete dir="${build.generated.sources.dir}/jax-ws/consumer/provider"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/provider"/>
         <delete dir="${build.generated.dir}/jax-wsCache/Service"/>
     </target>
     <target name="wsimport-client-mex" depends="wsimport-init">
         <mkdir dir="${build.generated.dir}/jax-wsCache/mex"/>
-        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/mex" destdir="${build.generated.dir}/jax-wsCache/mex" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/mex/wsdl/adgangsstyring.eksterntest-stoettesystemerne.dk/runtime/services/kombittrust/mex.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="https://adgangsstyring.eksterntest-stoettesystemerne.dk/identifysample/kombit/sts/mex?wsdl" xnocompile="true" xendorsed="true" package="consumer.sts">
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/mex" destdir="${build.generated.dir}/jax-wsCache/mex" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/mex/wsdl/adgangsstyring.eksterntest-stoettesystemerne.dk/runtime/services/kombittrust/mex.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="https://adgangsstyring.eksterntest-stoettesystemerne.dk/runtime/services/kombittrust/mex?wsdl" xnocompile="true" xendorsed="true" package="consumer.sts">
             <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/mex/wsdl/adgangsstyring.eksterntest-stoettesystemerne.dk/runtime/services/kombittrust/mex.wsdl"/>
             <produces dir="${build.generated.dir}/jax-wsCache/mex"/>
         </wsimport>

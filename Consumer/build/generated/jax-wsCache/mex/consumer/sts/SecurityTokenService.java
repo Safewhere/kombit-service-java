@@ -17,7 +17,7 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.2
  * 
  */
-@WebServiceClient(name = "SecurityTokenService", targetNamespace = "http://schemas.microsoft.com/ws/2008/06/identity/securitytokenservice", wsdlLocation = "https://adgangsstyring.eksterntest-stoettesystemerne.dk/identifysample/kombit/sts/mex?wsdl")
+@WebServiceClient(name = "SecurityTokenService", targetNamespace = "http://schemas.microsoft.com/ws/2008/06/identity/securitytokenservice", wsdlLocation = "https://adgangsstyring.eksterntest-stoettesystemerne.dk/runtime/services/kombittrust/mex?wsdl")
 public class SecurityTokenService
     extends Service
 {
@@ -30,7 +30,7 @@ public class SecurityTokenService
         URL url = null;
         WebServiceException e = null;
         try {
-            url = new URL("https://adgangsstyring.eksterntest-stoettesystemerne.dk/identifysample/kombit/sts/mex?wsdl");
+            url = new URL("https://adgangsstyring.eksterntest-stoettesystemerne.dk/runtime/services/kombittrust/mex?wsdl");
         } catch (MalformedURLException ex) {
             e = new WebServiceException(ex);
         }

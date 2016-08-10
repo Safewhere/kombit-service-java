@@ -25,7 +25,7 @@ public class Constant {
 //  public static String Issuer = "https://adgangsstyring.eksterntest-stoettesystemerne.dk/sts";
     
     //The url of production service which is secured by Identify*STS
-    public static String ServiceEndpointAddress = "https://adgangsstyring.eksterntest-stoettesystemerne.dk:8181/Service/Service";
+    public static String ServiceEndpointAddress = "https://service.eksterntest-stoettesystemerne.dk:8181/Service/Service";
     
     //Avender context value
     public static String ClaimValue = "01234567";
