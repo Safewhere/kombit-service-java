@@ -159,7 +159,7 @@ public class HttpSOAPClient implements SOAPClient {
             SOAPException soapException = new SOAPException(c.getResponseCode(), result);
             Fault fault = soapException.getFault();
             if (fault == null) 
-                fault = soapException.getFault(new QName(SOAPConstants.SOAP12_NS, "Fault", "s"));
+                fault = soapException.getFault(new QName(SOAPConstants.SOAP11_NS, "Fault", "s"));
             if (fault == null){
                 if (result.contains("http://schemas.microsoft.com/net/2005/12/windowscommunicationfoundation/dispatcher/fault"))
                 {

@@ -52,19 +52,19 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link RequestSecurityTokenResponseCollectionType }
-     * 
-     */
-    public RequestSecurityTokenResponseCollectionType createRequestSecurityTokenResponseCollectionType() {
-        return new RequestSecurityTokenResponseCollectionType();
-    }
-
-    /**
      * Create an instance of {@link RequestSecurityTokenResponseType }
      * 
      */
     public RequestSecurityTokenResponseType createRequestSecurityTokenResponseType() {
         return new RequestSecurityTokenResponseType();
+    }
+
+    /**
+     * Create an instance of {@link RequestSecurityTokenResponseCollectionType }
+     * 
+     */
+    public RequestSecurityTokenResponseCollectionType createRequestSecurityTokenResponseCollectionType() {
+        return new RequestSecurityTokenResponseCollectionType();
     }
 
     /**
