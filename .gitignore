@@ -13,10 +13,11 @@
 
 */dist
 */build
-!/Consumer/build
-
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 /Xmlsec/nbproject/private/
-/Consumer/build/
+/Consumer/build
+/Service/build
+/Consumer/dist
+/Service/dist
