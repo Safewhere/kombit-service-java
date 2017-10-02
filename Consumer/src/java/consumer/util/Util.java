@@ -68,7 +68,7 @@ public class Util {
         final TrustClient tokenClient = new TrustClient(Constant.StsEndpointAddress
                 , Constant.KeyStorePath, Constant.KeyStorePassword, clientCertificateAlias
                 , stsCertificate, Constant.LogFilePath);
-        tokenClient.setSoapVersion(SOAPConstants.SOAP11_NS);
+        tokenClient.setSoapVersion(SOAPConstants.SOAP12_NS);
         tokenClient.setUseReferenceForDelegateToken(false);
         tokenClient.setIssuer(Constant.Issuer);
         tokenClient.setAppliesTo(serviceEndpointAddress);
