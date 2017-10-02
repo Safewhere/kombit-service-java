@@ -48,7 +48,7 @@ import javax.xml.ws.soap.Addressing;
  * @author VTT
  */
 @WebService(serviceName = "Service", targetNamespace = "http://kombit.provider.dk/")
-@BindingType(javax.xml.ws.soap.SOAPBinding.SOAP11HTTP_BINDING)
+@BindingType(javax.xml.ws.soap.SOAPBinding.SOAP12HTTP_BINDING)
 @SOAPBinding(style = SOAPBinding.Style.DOCUMENT, use = SOAPBinding.Use.LITERAL)
 @HandlerChain(file = "HandlerConfig.xml")
 @Addressing

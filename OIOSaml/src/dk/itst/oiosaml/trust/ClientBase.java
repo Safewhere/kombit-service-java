@@ -19,7 +19,7 @@ public abstract class ClientBase {
     protected SOAPClient soapClient = new HttpSOAPClient();
     private final X509Credential credential;
 
-    protected String soapVersion = SOAPConstants.SOAP11_NS;
+    protected String soapVersion = SOAPConstants.SOAP12_NS;
     protected SigningPolicy signingPolicy = new SigningPolicy(true);
 
     private String requestXML;
