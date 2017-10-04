@@ -40,9 +40,9 @@ public class Constant {
     public static String KeyStorePath = "C:\\Program Files\\glassfish-4.1\\glassfish\\domains\\domain1\\config\\keystore.jks";
     public static String KeyStorePassword = "changeit";
     //The client certificate which is used for negotiating a security token from Identify*STS
-    public static String ClientCertificateAlias = "TU GENEREL FOCES gyldig (funktionscertifikat)";// cert with thumprint ‎2a 4d 45 2c 55 cf 56 72 2a 78 5e df 01 31 c7 15 8f f9 6e d1
+    public static String ClientCertificateAlias = "tu generel foces gyldig (funktionscertifikat)";// cert with thumprint ‎2a 4d 45 2c 55 cf 56 72 2a 78 5e df 01 31 c7 15 8f f9 6e d1
     //The client certificate which is used for negotiating a bootstrap token or used in onbehalfof proxy element
-    public static String OboCertificateAlias = "NETS DANID A/S - TU VOCES gyldig";// cert with thumprint 80 a5 37 37 ea 01 e9 77 94 96 2b 84 9c 0f 7c 8f 60 17 38 9e
+    public static String OboCertificateAlias = "nets danid a/s - tu voces gyldig";// cert with thumprint 80 a5 37 37 ea 01 e9 77 94 96 2b 84 9c 0f 7c 8f 60 17 38 9e
     //endregion
     
     /*All the following setting should not be touched*/
