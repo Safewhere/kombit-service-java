@@ -58,14 +58,9 @@ public class IssueTokenThrowsError extends HttpServlet {
             client.addFaultHander("https://sts.kombit.dk/fault", "StsFaultDetail", new FaultHandler() {
                 @Override
                 public void handleFault(QName faultCode, String faultReason, XMLObject detail) {
-                    //StsFaultDetail detailObj = Util.generateStsFaultDetail(detail);
-                    errorResponse += "Error thrown: "
+                    errorResponse = "Error thrown: "
                             + "EventId = " + faultCode.toString()
                             + ". Reason = " + faultReason+ "<br /><br />";
-//                    if ((detailObj != null) && (detailObj.getMessage()!=null))
-//                    {
-//                        errorResponse += ". Detail = " + detailObj.getMessage().getValue();
-//                    }
                 }
 
             });
@@ -73,7 +68,7 @@ public class IssueTokenThrowsError extends HttpServlet {
                 client.setAppliesTo(Constant.NoConnectionFoundError);
                 client.getToken(null);
             } catch (TrustException e) {
-                errorResponse += "There is an uncaught exception thrown, please check server log for more details: " + e.getMessage() + "<br /><br />";
+                errorResponse = "There is an uncaught exception thrown, please check server log for more details: " + e.getMessage() + "<br /><br />";
             }
             
             response.setContentType("text/html;charset=UTF-8");
